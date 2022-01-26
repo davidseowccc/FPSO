@@ -17,7 +17,7 @@ st.subheader("David Seow, 26 Jan 2022")
 st.markdown('Use this Streamlit app to make your own scatterplot about FPSOs!') 
 
 # Import Data
-df = pd.read_excel("fpso_data.xlsx")
+df = pd.read_csv("fpso_data_c.csv")
 
 L = list(df['LENGTH (M)'])
 B = list(df['BREADTH (M)'])
