@@ -12,7 +12,7 @@ import seaborn as sns
 
 PAGE_CONFIG = {"page_title":"StColab.io","page_icon":":smiley:","layout":"centered"}
 
-st.title("FPSO 2017 Data Analytics")
+st.title("FPSO 2017 Data Analytics v2")
 st.subheader("David Seow, updated 24 Dec 2022")
 st.markdown('v1 (26 Jan 2022)')
 st.markdown('Use this Streamlit app to make your own scatterplot about FPSOs!')
