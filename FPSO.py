@@ -13,8 +13,8 @@ import seaborn as sns
 PAGE_CONFIG = {"page_title":"StColab.io","page_icon":":smiley:","layout":"centered"}
 
 st.title("FPSO 2017 Data Analytics v2")
-st.subheader("David Seow, updated 24 Dec 2022")
-st.markdown('v1 (26 Jan 2022)')
+# st.subheader("David Seow, updated 24 Dec 2022")
+st.markdown('David Seow, updated 24 Dec 2022')
 st.markdown('Use this Streamlit app to make your own scatterplot about FPSOs!')
 st.markdown('')
 
@@ -58,3 +58,4 @@ plt.ylabel(selected_y_var)
 plt.title("Scatterplot of FPSO in Region {}".format(selected_region)) 
 
 st.pyplot(fig) 
+st.markdown('v1 (26 Jan 2022)')
