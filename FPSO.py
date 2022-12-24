@@ -14,20 +14,21 @@ PAGE_CONFIG = {"page_title":"StColab.io","page_icon":":smiley:","layout":"center
 
 st.title("FPSO 2017 Data Analytics")
 st.subheader("David Seow, updated 24 Dec 2022")
-st.markdown('Use this Streamlit app to make your own scatterplot about FPSOs! v1 (26 Jan 2022)')
+st.markdown('v1 (26 Jan 2022)')
+st.markdown('Use this Streamlit app to make your own scatterplot about FPSOs!')
 st.markdown('')
 
 # Import Data
 df = pd.read_csv("fpso_data_c.csv", encoding="ISO-8859-1")
 
-L = list(df['LENGTH (M)'])
-B = list(df['BREADTH (M)'])
-D = list(df['DEPTH (M)'])
+L = list(df['LENGTH (m)'])
+B = list(df['BREADTH (m)'])
+D = list(df['DEPTH (m)'])
 RES = list(df['RESERVES (MMBOE)'])
 R = list(df['REGION'])
 CLASS = list(df['CLASSIFICATION'])
-DWT = list(df['DEADWEIGHT (DWT) (Tonnes)'])
-PROD = list(df['EQUIVALENT THROUGHPUT (MBOE/D)'])
+DWT = list(df['DEADWEIGHT (DWT) (Tonne)'])
+PROD = list(df['EQUIVALENT THROUGHPUT (MMBOE/Day)'])
 STO = list(df['STORAGE CAPACITY (MBBLs)'])
 
 selected_region = st.selectbox('Select Region to visualise FPSO distribution?', 
@@ -37,7 +38,7 @@ selected_x_var = st.selectbox('Select the x variable:',
                               ['LENGTH (M)', 'BREADTH (M)', 'DEPTH (M)', 'STORAGE CAPACITY (MBBLs)']) 
 
 selected_y_var = st.selectbox('Select the y variable:', 
-                              ['LENGTH (M)', 'BREADTH (M)', 'DEPTH (M)', 'STORAGE CAPACITY (MBBLs)']) 
+                              ['BREADTH (M)', 'LENGTH (M)', 'DEPTH (M)', 'STORAGE CAPACITY (MBBLs)']) 
  
 df = df[df['REGION'] == selected_region]
     
