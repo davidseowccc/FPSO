@@ -31,7 +31,7 @@ DWT = list(df['DEADWEIGHT (DWT) (Tonnes)'])
 PROD = list(df['EQUIVALENT THROUGHPUT (MBOE/D)'])
 STO = list(df['STORAGE CAPACITY (MBBLs)'])
 
-selected_region = st.selectbox('Select Region to visualise FPSO distribution?', 
+selected_region = st.selectbox('Select Region to visualise FPSO distribution:', 
                               ['Brazil', 'N Sea', 'W Africa', 'SCS', 'Aust', 'GOM', 'Others'])
 
 selected_y_var = st.selectbox('Select the Y-axis variable:', 
