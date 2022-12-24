@@ -13,8 +13,9 @@ import seaborn as sns
 PAGE_CONFIG = {"page_title":"StColab.io","page_icon":":smiley:","layout":"centered"}
 
 st.title("FPSO 2017 Data Analytics")
-st.subheader("David Seow, 26 Jan 2022")
+st.subheader("David Seow, updated 24 Dec 2022")
 st.markdown('Use this Streamlit app to make your own scatterplot about FPSOs!') 
+st.markdown('Version 1: 26 Jan 2022\n')
 
 # Import Data
 df = pd.read_csv("fpso_data_c.csv", encoding="ISO-8859-1")
