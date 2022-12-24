@@ -35,10 +35,10 @@ selected_region = st.selectbox('Select Region to visualise FPSO distribution:',
                               ['Brazil', 'N Sea', 'W Africa', 'SCS', 'Aust', 'GOM', 'Others'])
 
 selected_y_var = st.selectbox('Select the Y-axis variable:', 
-                              ['LENGTH (M)', 'BREADTH (M)', 'DEPTH (M)', 'STORAGE CAPACITY (MBBLs)']) 
+                              ['LENGTH (M)', 'BREADTH (M)', 'DEPTH (M)', 'STORAGE CAPACITY (MBBLs)', 'DEADWEIGHT (DWT) (Tonnes)']) 
 
 selected_x_var = st.selectbox('Select the X-axis variable:', 
-                              ['BREADTH (M)', 'DEPTH (M)', 'STORAGE CAPACITY (MBBLs)', 'LENGTH (M)']) 
+                              ['BREADTH (M)', 'DEPTH (M)', 'STORAGE CAPACITY (MBBLs)', 'DEADWEIGHT (DWT) (Tonnes)', 'LENGTH (M)']) 
  
 df = df[df['REGION'] == selected_region]
     
