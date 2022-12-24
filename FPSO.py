@@ -34,11 +34,11 @@ STO = list(df['STORAGE CAPACITY (MBBLs)'])
 selected_region = st.selectbox('Select Region to visualise FPSO distribution?', 
                               ['Aust', 'Brazil', 'GOM', 'N Sea', 'Others', 'SCS', 'W Africa'])
 
-selected_x_var = st.selectbox('Select the x variable:', 
+selected_y_var = st.selectbox('Select the y variable:', 
                               ['LENGTH (M)', 'BREADTH (M)', 'DEPTH (M)', 'STORAGE CAPACITY (MBBLs)']) 
 
-selected_y_var = st.selectbox('Select the y variable:', 
-                              ['BREADTH (M)', 'LENGTH (M)', 'DEPTH (M)', 'STORAGE CAPACITY (MBBLs)']) 
+selected_x_var = st.selectbox('Select the x variable:', 
+                              ['BREADTH (M)', 'DEPTH (M)', 'STORAGE CAPACITY (MBBLs)', 'LENGTH (M)']) 
  
 df = df[df['REGION'] == selected_region]
     
