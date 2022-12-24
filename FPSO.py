@@ -27,7 +27,7 @@ D = list(df['DEPTH (M)'])
 RES = list(df['RESERVES (MMBOE)'])
 R = list(df['REGION'])
 CLASS = list(df['CLASSIFICATION'])
-DWT = list(df['DEADWEIGHT (DWT) (Tonne)'])
+DWT = list(df['DEADWEIGHT (DWT) (Tonnes)'])
 PROD = list(df['EQUIVALENT THROUGHPUT (MBOE/D)'])
 STO = list(df['STORAGE CAPACITY (MBBLs)'])
 
