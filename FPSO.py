@@ -14,7 +14,8 @@ PAGE_CONFIG = {"page_title":"StColab.io","page_icon":":smiley:","layout":"center
 
 st.title("FPSO 2017 Data Analytics")
 st.subheader("David Seow, updated 24 Dec 2022")
-st.markdown('Use this Streamlit app to make your own scatterplot about FPSOs!\n Version 1: 26 Jan 2022\n')
+st.markdown('Use this Streamlit app to make your own scatterplot about FPSOs! v1 (26 Jan 2022)')
+st.markdown('')
 
 # Import Data
 df = pd.read_csv("fpso_data_c.csv", encoding="ISO-8859-1")
