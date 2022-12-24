@@ -56,7 +56,7 @@ plt.xlabel(selected_x_var)
 plt.ylabel(selected_y_var) 
 
 # plt.title("Scatterplot of FPSO") 
-plt.title("Scatterplot of FPSO in Region {}".format(selected_region)) 
+plt.title("Scatterplot of FPSO in Region: {}".format(selected_region)) 
 
 st.pyplot(fig) 
 st.markdown('v1 (26 Jan 2022): based on 2017 FPSO data from Offshore Magazine.')
