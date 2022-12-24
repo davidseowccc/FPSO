@@ -21,14 +21,14 @@ st.markdown('')
 # Import Data
 df = pd.read_csv("fpso_data_c.csv", encoding="ISO-8859-1")
 
-L = list(df['LENGTH (m)'])
-B = list(df['BREADTH (m)'])
-D = list(df['DEPTH (m)'])
+L = list(df['LENGTH (M)'])
+B = list(df['BREADTH (M)'])
+D = list(df['DEPTH (M)'])
 RES = list(df['RESERVES (MMBOE)'])
 R = list(df['REGION'])
 CLASS = list(df['CLASSIFICATION'])
 DWT = list(df['DEADWEIGHT (DWT) (Tonne)'])
-PROD = list(df['EQUIVALENT THROUGHPUT (MMBOE/Day)'])
+PROD = list(df['EQUIVALENT THROUGHPUT (MBOE/D)'])
 STO = list(df['STORAGE CAPACITY (MBBLs)'])
 
 selected_region = st.selectbox('Select Region to visualise FPSO distribution?', 
