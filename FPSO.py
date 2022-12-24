@@ -32,7 +32,7 @@ PROD = list(df['EQUIVALENT THROUGHPUT (MBOE/D)'])
 STO = list(df['STORAGE CAPACITY (MBBLs)'])
 
 selected_region = st.selectbox('Select Region to visualise FPSO distribution?', 
-                              ['Aust', 'Brazil', 'GOM', 'N Sea', 'Others', 'SCS', 'W Africa'])
+                              ['Brazil', 'N Sea', 'W Africa', 'SCS', 'Aust', 'GOM', 'Others'])
 
 selected_y_var = st.selectbox('Select the y variable:', 
                               ['LENGTH (M)', 'BREADTH (M)', 'DEPTH (M)', 'STORAGE CAPACITY (MBBLs)']) 
