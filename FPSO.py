@@ -12,9 +12,9 @@ import seaborn as sns
 
 PAGE_CONFIG = {"page_title":"StColab.io","page_icon":":smiley:","layout":"centered"}
 
-st.title("FPSO 2017 Data Analytics v2")
+st.title("FPSO Parametric Survey")
 # st.subheader("David Seow, updated 24 Dec 2022")
-st.markdown('David Seow, updated 24 Dec 2022')
+st.markdown('David Seow, updated 24 Dec 2022 (v2)')
 st.subheader('Deploy a Streamlit Web App')
 st.subheader('Scatterplots of FPSO parametric surveys')
 st.markdown('')
@@ -59,4 +59,4 @@ plt.ylabel(selected_y_var)
 plt.title("Scatterplot of FPSO in Region {}".format(selected_region)) 
 
 st.pyplot(fig) 
-st.markdown('v1 (26 Jan 2022)')
+st.markdown('v1 (26 Jan 2022): based on 2017 FPSO data from Offshore Magazine.')
