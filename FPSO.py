@@ -16,7 +16,7 @@ st.title("FPSO Parametric Survey")
 # st.subheader("David Seow, updated 24 Dec 2022")
 st.markdown('David Seow, updated 24 Dec 2022 (v2)')
 st.subheader('Deploy a Streamlit Web App')
-st.subheader('Scatterplots of FPSO parametric surveys')
+st.subheader('Scatterplots of FPSO parametric survey')
 st.markdown('')
 
 # Import Data
