@@ -15,7 +15,8 @@ PAGE_CONFIG = {"page_title":"StColab.io","page_icon":":smiley:","layout":"center
 st.title("FPSO 2017 Data Analytics v2")
 # st.subheader("David Seow, updated 24 Dec 2022")
 st.markdown('David Seow, updated 24 Dec 2022')
-st.subheader('Deploy Streamlit app for scatterplots of FPSO parametric surveys')
+st.subheader('Deploy a Streamlit Web App')
+st.subheader('Scatterplots of FPSO parametric surveys')
 st.markdown('')
 
 # Import Data
